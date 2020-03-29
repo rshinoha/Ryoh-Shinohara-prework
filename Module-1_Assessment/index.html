@@ -5,18 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
         <title>About Me</title>
     </head>
     <body>
-        <nav class="navbar navbar-light">
-            <h1>Ryoh Shinohara</h1>
-            <div>
-                <a>About</a>
-                <a>Portfolio</a>
-                <a>Contact</a>
-            </div>
-        </nav>
-        <div class="container">
+        <header>
+            <nav class="container navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Ryoh Shinohara</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="container">
             <h1>About Me</h1>
             <div class="row">
                 <div class="col-4">
@@ -33,29 +48,36 @@
                 </div>
             </div>
             <div class="row">
-                <p>
-                    As for education and skills that I have, I have a M.S. in Data Science from DePaul University 
-                    as well as a B.S. in Molecular and Cellular Biology from University of Illinois Urbana-Champaign. 
-                    As an aspiring data engineer, I've been working on improving my coding skills through 
-                    independent work.
-                </p>
+                <div class="col">
+                    <p>
+                        As for education and skills that I have, I have a M.S. in Data Science from DePaul University 
+                        as well as a B.S. in Molecular and Cellular Biology from University of Illinois Urbana-Champaign. 
+                        As an aspiring data engineer, I've been working on improving my coding skills through 
+                        independent work.
+                    </p>
+                </div>
             </div>
             <div class="row">
-                <p>
-                    Here's a list of skills I have:
-                </p>
-                <ul>
-                    <li>Python (numpy, scikitlearn, plotly, etc.)</li>
-                    <li>R (ggplot, dplyr, Shiny, etc.)</li>
-                    <li>SQL</li>
-                    <li>Some experience with distributed computing (Hadoop, Hive, etc.)</li>
-                    <li>Misc: Japanese</li>
-                </ul>
+                <div class="col">
+                    <p>
+                        Here's a list of skills I have:
+                    </p>
+                    <ul>
+                        <li>Python (numpy, scikitlearn, plotly, etc.)</li>
+                        <li>R (ggplot, dplyr, Shiny, etc.)</li>
+                        <li>SQL</li>
+                        <li>Some experience with distributed computing (Hadoop, Hive, etc.)</li>
+                        <li>Misc: Japanese</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <p>Copyright &#169;</p>
-        </div>>
+        </main>
+        <footer class="footer">
+            <div>
+                Copyright &#169;
+            </div>
+        </footer>
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

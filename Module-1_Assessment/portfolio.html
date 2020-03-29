@@ -5,49 +5,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Contact Me</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Portfolio Gallery</title>
     </head>
     <body>
-        <div>
-            <h1>Ryoh Shinohara</h1>
-            <div>
-                <a>About</a>
-                <a>Portfolio</a>
-                <a>Contact</a>
+        <header>
+            <nav class="container navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Ryoh Shinohara</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="row">
+                <div class="card col-4">
+                    <img src="assets/images/toast.jpg" class="img-thumbnail" alt="restaurant pic">
+                    <div class="card-img-overlay text-center">
+                        <a href="#" class="btn stretched-link">Restaurant Food</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="assets/images/cooking.jpg" class="img-thumbnail" alt="cooking pic">
+                    <div class="card-img-overlay text-center">
+                        <a href="#" class="btn stretched-link">Cooking</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <a></a>
-                    <h2>Restaurant Food</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/images/chicago.jpg" class="img-thumbnail" alt="travel pic">
+                    <div class="card-img-overlay text-center">
+                        <a href="#" class="btn stretched-link">Travel</a>
+                    </div>
                 </div>
-                <div>
-                    <a></a>
-                    <h2>Cooking</h2>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a></a>
-                    <h2>Travel</h2>
-                </div>
-                <div>
-                    <a></a>
-                    <h2>Doodling</h2>
+                <div class="col-4">
+                    <img src="assets/images/random_doodle.jpg" class="img-thumbnail" alt="doodle pic">
+                    <div class="card-img-overlay text-center">
+                        <a href="#" class="btn stretched-link">Doodling</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <a></a>
-                    <h2>Cute things</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/images/dedenne_halloween.jpg" class="img-thumbnail" alt="cute pic">
+                    <div class="card-img-overlay text-center">
+                        <a href="#" class="btn stretched-link">Cute Things</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <p>Copyright &#169;</p>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        </main>
+
+        <footer class="footer">
+            <div>
+                Copyright &#169;
+            </div>
+        </footer>
+
+        <script src="https: //code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
