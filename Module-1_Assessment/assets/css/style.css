@@ -1,3 +1,41 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    border-color: #cccccc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar-brand {
+    background-color: #4aaaa5;
+    padding: 0.5em 1em;
+}
+
+#logo {
+    color: #ffffff;
+}
+
+.page-title {
+    color: #4aaaa5;
+}
+
+.container {
+    max-width: 960px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
