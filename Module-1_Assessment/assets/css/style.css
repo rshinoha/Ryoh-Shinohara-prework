@@ -2,6 +2,13 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     border-color: #cccccc;
+    height: 100%;
+    background-image: url("../images/beige-tiles/beige-tiles.png");
+    background-repeat: repeat;
+}
+
+.border-2 {
+    border-width:2px !important;
 }
 
 h1,
@@ -17,6 +24,10 @@ img {
     max-width: 100%;
 }
 
+header {
+    background-color: #ffffff;
+}
+
 .navbar-brand {
     background-color: #4aaaa5;
     padding: 0.5em 1em;
@@ -28,6 +39,10 @@ img {
 
 .page-title {
     color: #4aaaa5;
+}
+
+nav {
+    max-width: 960px;
 }
 
 .container {
