@@ -40,6 +40,10 @@ main {
     color: #4aaaa5;
 }
 
+header {
+    border-bottom: medium solid #cccccc;
+}
+
 main {
     border: medium solid #dddddd;
 }
@@ -55,10 +59,6 @@ main {
 
 .page-title {
     color: #4aaaa5;
-}
-
-nav {
-    max-width: 960px;
 }
 
 .container {
@@ -92,4 +92,20 @@ button {
     padding-bottom: 0.75em;
     width: 100%;
     color: #ffffff;
+}
+
+.container-sm {
+    max-width: 960px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .container-sm {
+        max-width: 720px;
+    }
 }
