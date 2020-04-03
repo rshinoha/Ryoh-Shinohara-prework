@@ -49,6 +49,11 @@ const replaceBlanks = function(word, blanks, letter) {
     return updateBlanks;
 }
 
+// Updates blanks with appropriate letters
+const updateGame = function(event) {
+    blanks.innerText = replaceBlanks(randName, blanks.innerText, event.key);
+}
+
 // List of picture names
 const picNames = Object.keys(pictures);
 
@@ -59,11 +64,12 @@ const maxGuess = 10;
 let randPic = choosePic(picNames);
 let randName = pictures[randPic]["name"];
 let letter = '';
-console.log(randName);]
+console.log(randName);
 
 // References
 let blanks = document.querySelector('#blanks');
 
 currentBlanks = makeBlanks(randName);
-
 blanks.innerText = currentBlanks;
+
+document.addEventListener('keyup', updateGame);
