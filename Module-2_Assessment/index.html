@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
     <title>Word Guess Game</title>
   </head>
   <body>
     <h1>Name the Formula 1 Driver</h1>
-    <p>Press any key to get started!</p>
+    <p id="directions"></p>
 
     <div class="row">
         <div class="col">
@@ -26,7 +26,8 @@
         </div>
         <div class="col">
             <div class="row">
-                <h4 class="addSpacing" id="blanks"><span id="correct"></span></h4>
+                <h4 class="addSpacing" id="blanks"></h4>
+                <h5><span id="isCorrect"></span></h5>
             </div>
             <div class="row">
                 <h4>Guesses remaining: <span id="guessCount"></span></h>
