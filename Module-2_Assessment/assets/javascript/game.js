@@ -35,6 +35,9 @@ const picNames = Object.keys(pictures);
 // Max number of guesses available
 const maxGuess = 5;
 
+// Counter for number of wins
+let numWins = 0;
+
 // Chooses random picture name
 const choosePic = function(arr) {
     const randNum = Math.floor(Math.random() * arr.length);
@@ -99,6 +102,7 @@ const addToUsedLetter = function(c) {
     return isLetter(letter) && !randName.includes(letter) && !usedLetters.innerText.includes(letter) && letter.length == 1;
 }
 
+// Updates guess count remaining if addToUsedLetter is true
 const updateGuess = function(event) {
     if(addToUsedLetter(event.key)) {
         currentCount -= 1;
@@ -106,6 +110,7 @@ const updateGuess = function(event) {
     }
 }
 
+// Updates used letters if addToUsedLetter is true 
 const updateUsedWords = function(event) {
     const letter = event.key.toUpperCase();
     if(addToUsedLetter(letter)) {
@@ -118,23 +123,35 @@ const updateUsedWords = function(event) {
     }
 }
 
+// Displays a mark at the end of the game (check = correct, x = guesses used up)
 const updateMarks = function(event) {
     if(gameFinished()) {
         if(!blanks.innerText.includes(symbol)) {
-            correct.innerHTML = checkMark;
+            correct.innerHTML = checkMark + ' you got it!';
             directions.innerText = dirCorrect;
         }
         else {
-            correct.innerHTML = xMark;
+            correct.innerHTML = xMark + ' oops...';
             directions.innerText = dirWrong;
         }
         console.log(event.key);
     }
 }
 
+const updateWins = function() {
+    if(gameFinished()) {
+        if(!blanks.innerText.includes(symbol)) {
+            numWins += 1;
+            wins.innerText = numWins;
+        }
+    }
+}
+
+// Updates page with new picture
 const newGame = function(event) {
     const key = event.key;
     if(key === 'Enter') {
+        updateWins();
         randPic = choosePic(picNames);
         randName = pictures[randPic]["name"].toUpperCase();
         console.log(randName);
@@ -150,6 +167,8 @@ const newGame = function(event) {
     }
 }
 
+// Set up variables for start of game
+
 // Choosing random picture
 let randPic = choosePic(picNames);
 let randName = pictures[randPic]["name"].toUpperCase();
@@ -164,6 +183,7 @@ let guessCount = document.querySelector('#guessCount');
 let usedLetters = document.querySelector('#usedLetters');
 let currentCount = maxGuess;
 let correct = document.querySelector('#isCorrect');
+let wins = document.querySelector('#wins');
 
 directions.innerText = dirGameStart;
 picture.src = pictures[randPic]["picture"];
@@ -172,6 +192,7 @@ currentBlanks = makeBlanks(randName);
 blanks.innerText = currentBlanks;
 guessCount.innerText = currentCount;
 usedLetters.innerText = '';
+wins.innerText = numWins;
 
 document.addEventListener('keyup', updateGame);
 document.addEventListener('keyup', updateMarks);

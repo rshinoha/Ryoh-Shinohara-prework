@@ -1,3 +1,53 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+img {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+header,
+footer {
+    color: #ffffff;
+    background-color: #e10602;
+}
+
 .addSpacing {
     letter-spacing: 0.5em;
+}
+
+#answer {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    opacity: 0.75;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.test {
+    background-color: aquamarine;
 }
