@@ -5,7 +5,7 @@ This repository contains assessments done as a part of the application process f
 * `Bootstrap_Assessment`: using Bootstrap and focusing on responsiveness, we recreated the same design as `HTML_BasicCSS_Assessment` while adding other components to our liking
 * `Module-1_Assessment`: using HTML, CSS, and Bootstrap, we created three HTML files ("About Me", "Contact Me", and "Portolio Gallery" pages) based on a theme provided by sample screenshots and additional specifications provided in the assessment
 * `JavaScript_Basic_Assessment`: solved a series of problems that reviewed basic JavaScript concepts (math operations, alerts/prompts, loops, etc.)
-* `Module-2_Assessment`: created a [word guess game](/Module-2_Assessment/README.md) using JavaScript
+* `Module-2_Assessment`: created a [word guess game](/Module-2_Assessment) using JavaScript
 ## Requirements
 A browser
 ## Configuration
