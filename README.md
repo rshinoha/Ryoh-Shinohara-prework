@@ -1,4 +1,4 @@
-# Dev10 Prework
+# Dev10 Prework Assessments
 This repository contains assessments done as a part of the application process for Genesis10's Dev10 program. As part of the application process, we are required to complete a series of lessons and assessments on HTML, CSS, version control, JavaScript, and Java. Below are brief descriptions of the assessments:
 * `HTML_BasicCSS_Assessment`: using HTML and CSS, we recreated a design provided by the assessment
 * `CSS_Assessment`: using HTML and CSS with a focus on floats, we recreated a design provided by the assessment
