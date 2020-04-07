@@ -169,7 +169,6 @@ const updateMarks = function(event) {
             correct.innerHTML = xMark + ' oops...';
             directions.innerText = dirWrong;
         }
-        console.log(event.key);
     }
 }
 
@@ -189,7 +188,6 @@ const newGame = function(event) {
         updateWins();
         randPic = choosePic(picNames);
         randName = pictures[randPic]["name"].toUpperCase();
-        console.log(randName);
         currentCount = maxGuess;
         directions.innerText = dirGameStart;
         picture.src = pictures[randPic]["picture"];
@@ -207,7 +205,6 @@ const newGame = function(event) {
 // Choosing random picture
 let randPic = choosePic(picNames);
 let randName = pictures[randPic]["name"].toUpperCase();
-console.log(randName);
 
 // References
 let directions = document.querySelector('#directions');
